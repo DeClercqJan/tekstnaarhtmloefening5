@@ -1,12 +1,15 @@
 * {
     box-sizing: border-box;
-    /* border: 1px solid black; */
+    /* border: 1px solid red; */
 }
 
 body {
     margin: 0 0 0 0;
     text-align: center;
     font-size: 8px;
+    position: fixed; /* om geen schuifbalk aan de rechterkant te hebben */
+    height: 100%;
+    width: 100%;
 }
 
 .header {
@@ -19,7 +22,8 @@ body {
 }
 
 h1 {
-    
+   font-weight: bold;
+   font-size: 32px; 
 }
 
 .upper_section {
@@ -28,7 +32,6 @@ h1 {
     align-items: flex-start;
     width: 100%;
     margin-top: 5%;
-    margin-bottom:5%;
 }
 
 .upper_section>* {
@@ -44,8 +47,8 @@ h1 {
 .lower_section {
     display: flex;
     justify-content: center;
-    margin-top: 5%;
-    margin-bottom:5%;
+    margin-top: 2%;
+    margin-bottom:3%;
     width: 100%;
     
 }
@@ -74,4 +77,12 @@ img {
 font-style: italic;
 color: grey;
 line-height: 15px;
+}
+
+.lower_bar {
+    background-color:  #232323;
+    height: 15px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
 }
