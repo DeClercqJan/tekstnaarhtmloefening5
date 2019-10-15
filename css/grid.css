@@ -1,34 +1,71 @@
 * {
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    margin: 0 0 0 0;
 }
 
 img {
     width: 100%;
 }
 
-.header {
+.header {   
     text-align: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 60px;
 }
+
+h1 {
+    line-height: 20px; /* precies gemakkelijker om mee te rekenen dan met font-size */
+    padding: 20px 0px 20px 0px;
+}
+
 
 .upper_section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+    margin-top: 1%;
+
+}   
 
 .intro_text {
     grid-column-start: 2;
 }
 
 
+.intro_text h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.intro_text p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
 .lower_section {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    grid-gap: 2%;
+    margin-top: 1%;
+
 }
 
 .lower_section div:nth-child(1) {
     grid-column-start: 2;
     /* merk op: de eerste moet ik goed zetten, maar de volgende worden gewoon weggedrukt en moet je dus niet goed zetten*/
+}
+
+.lower_section div {
+    display: grid;
+    justify-items: center;
+
+}
+.lower_section div img {
+    width: 90%;
+
 }
 
 /*
