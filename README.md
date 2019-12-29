@@ -9,6 +9,7 @@
 - change linked css file to change from grid to flexbox or vice versa
 
 # to do's
+- lower bar in grid version not ok
 
 # ORIGINAL ASSIGNMENT BELOW
 
